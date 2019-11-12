@@ -1,0 +1,66 @@
+@import './utils/reset';
+@import './utils/libs';
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #fff;
+  color: $mainColor;
+  font-size: $mainFontSize;
+  line-height: $mainLineHeight;
+  font-family: $mainFont;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+.h1 {
+  margin: 0 0 42px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 1.2;
+  text-transform: none;
+  text-align: center;
+  @media screen and (max-width: $tableWidth) {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+h3,
+.h3 {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.1;
+  text-transform: none;
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+a {
+  color: $mainColor;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1310px;
+  padding: 0 10px;
+  margin: 0 auto;
+}

@@ -1,0 +1,13 @@
+extends ../../layouts/page.pug
+
+include ../../components/header/header.pug
+
+block vars
+  - const title = 'Строй надзор';
+block header
+  +header("header__main")
+block content
+
+block footer
+  include ../../components/footer/footer
+

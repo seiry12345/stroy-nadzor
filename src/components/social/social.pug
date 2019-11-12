@@ -1,0 +1,5 @@
+mixin social(customSelector, items)
+  ul(class=`social-list ${customSelector}`)
+    each item in items
+      li
+        a(href= item.url, class= `social__item ${item.selector}`)
