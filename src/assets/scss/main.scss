@@ -22,14 +22,13 @@ html {
 
 h1,
 .h1 {
-  margin: 0 0 42px;
+  margin: 0 0 25px;
   color: #fff;
   font-style: normal;
-  font-weight: 700;
   font-size: 54px;
+  font-weight: 900;
   line-height: 1.2;
   text-transform: none;
-  text-align: center;
   @media screen and (max-width: $tableWidth) {
     font-size: 32px;
     line-height: 48px;
@@ -54,13 +53,42 @@ h3,
   }
 }
 
-a {
-  color: $mainColor;
-  text-decoration: none;
+.mobile-href {
+  pointer-events: none;
+  @media all and (max-width: $smDesktopWidth ){
+    pointer-events: auto;
+  }
 }
 
 .wrapper {
   max-width: 1310px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+ul, ol {
+  &.default-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }

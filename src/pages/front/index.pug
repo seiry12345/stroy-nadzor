@@ -3,6 +3,7 @@ extends ../../layouts/page.pug
 include ../../components/header/header.pug
 
 block vars
+  - const socialItems = [{"url": "#", "selector": "instagram"}, {"url": "#", "selector": "facebook"}, {"url": "#", "selector": "vk"}, {"url": "#", "selector": "youtube"}];
   - const title = 'Строй надзор';
 block header
   +header("header__main")
