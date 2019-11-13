@@ -55,6 +55,59 @@ a {
   text-decoration: none;
 }
 
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  &.default-list {
+    li {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  li {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+ul {
+  li {
+    z-index: 1;
+    position: relative;
+    padding: 0 0 0 20px;
+    margin: 0 0 1px;
+    &:before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 8px;
+      height: 8px;
+      background-color: $orange;
+      border-radius: 50%;
+    }
+  }
+}
+
+ol {
+  counter-reset: num;
+  li {
+    position: relative;
+    padding: 0 0 0 26px;
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 2px;
+      content: counter(num) ') ';
+      counter-increment: num;
+      font-weight: 700;
+    }
+  }
+}
+
 table {
   width: 100%;
   margin: 0 0 15px;

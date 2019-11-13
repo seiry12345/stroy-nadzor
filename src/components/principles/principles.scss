@@ -1,0 +1,81 @@
+.principles {
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  &__work {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  &__work-left {
+    flex: 1;
+    padding-top: 10px;
+  }
+
+  &__work-right {
+    max-width: 860px;
+    margin-left: 50px;
+  }
+
+  &__title {
+    margin: 0 0 25px;
+    font-size: 24px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  &__work-text {
+    margin: 0;
+  }
+
+  p {
+    margin: 0 0 14px;
+    font-size: 16px;
+  }
+
+  &__review {
+    flex: 1;
+    img {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__review-wrap {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 28px;
+  }
+
+  &__review-item {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  &__review-item-work {
+    p:last-child {
+      margin-top: 26px;
+    }
+  }
+
+  &__why {
+    max-width: 396px;
+    margin-left: 30px;
+    img {
+      margin-bottom: 20px;
+    }
+  }
+
+  ul,
+  ol {
+    font-size: 16px;
+  }
+}

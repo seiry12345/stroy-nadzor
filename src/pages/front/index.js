@@ -9,6 +9,7 @@ import '../../components/build/build.scss'
 import '../../components/form/form.scss'
 import '../../components/order/order.scss'
 import '../../components/faq/faq.scss'
+import '../../components/principles/principles.scss'
 
 // jquery
 import 'jquery/dist/jquery.min'
