@@ -1,0 +1,40 @@
+include ../button/button
+
+form.callform
+  h2.callform__title Оставьте смету
+  p.callform__subtitle
+    | Оставьте заявку, либо звоните, мы пообщаемся и сами все<br /> за вас заполним: <a href="tel: +7 985 897 00 01" class="mobile-href">+7 985 897 00 01</a>
+
+  .callform__item.callform__item-project
+    h3 Проект
+    .form-item.form-item__textarea
+      label(for="text", class="label") Описание
+      textarea(class="callform__textarea form-item--js", id="text")
+    .form-item.form-item__file
+      label(for="file")
+        +button("callform__file", "Прикрепить файл", true)
+      input(type="file", class="btn callform__file-input", id="file")
+
+  .callform__item.callform__item-contacts
+    h3 Контактные данные
+    .form-item__wrap
+      .form-item.form-item__name
+        label(for="name", class="label") Имя
+        input(type="text", id="name", class="form-item--js")
+
+      .form-item.form-item__company
+        label(for="company", class="label") Компания
+        input(type="text", id="company", class="form-item--js")
+
+      .form-item.form-item__email
+        label(for="email", class="label") Email
+        input(type="email", id="email", class="form-item--js")
+
+      .form-item.form-item__phone
+        label(for="tel", class="label") Телефон
+        input(type="tel", id="tel", class="form-item--js")
+
+  .form-item__wrap
+    +button("callform__btn", "Отправить запрос")
+    p.callform__privacy
+      | Нажимая на кнопку, вы даете <a href="/privacy">согласие</a> на обработку персональных данных

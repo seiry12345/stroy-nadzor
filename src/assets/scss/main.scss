@@ -21,13 +21,15 @@ html {
 }
 
 h1,
+.h1,
+h2,
 .h1 {
   margin: 0 0 25px;
   color: #fff;
   font-style: normal;
-  font-size: 54px;
+  font-size: 56px;
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1;
   text-transform: none;
   @media screen and (max-width: $tableWidth) {
     font-size: 32px;
@@ -37,6 +39,17 @@ h1,
     font-size: 28px;
     line-height: 40px;
   }
+}
+
+h2,
+.h2 {
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 54px;
+  line-height: 64px;
+  padding-left: 35px;
 }
 
 h3,
@@ -61,7 +74,7 @@ h3,
 }
 
 .wrapper {
-  max-width: 1310px;
+  max-width: 1330px;
   padding: 0 10px;
   margin: 0 auto;
 }

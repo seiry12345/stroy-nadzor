@@ -1,0 +1,21 @@
+.build {
+  position: relative;
+  min-height: 820px;
+  background-color: #000;
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+  }
+
+  &__title {
+    max-width: 670px;
+    padding-top: 315px;
+  }
+
+  .callform {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
