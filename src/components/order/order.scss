@@ -1,3 +1,40 @@
+@keyframes bounce-in-fwd {
+  0% {
+    transform: translateX(-50%) scale(0);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateX(-50%) scale(1);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateX(-50%) scale(0.7);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateX(-50%) scale(1);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateX(-50%) scale(0.84);
+    animation-timing-function: ease-in;
+  }
+  89% {
+    transform: translateX(-50%) scale(1);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateX(-50%) scale(0.95);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
 @keyframes orderWidth {
   from {
     width: 0;
@@ -67,7 +104,8 @@
       }
 
       .btn {
-        opacity: 1;
+        display: inline-flex;
+        animation: bounce-in-fwd 1s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
       }
     }
 
@@ -145,21 +183,22 @@
   }
 
   .btn {
-    opacity: 0;
+    display: none;
     position: absolute;
     bottom: 30px;
     left: 50%;
-    display: inline-flex;
     align-items: center;
     background-color: transparent;
     padding: 0;
     color: $orange;
     transform: translateX(-50%);
-    transition: 0.4s;
+    transition: all 0.4s ease;
+
     &:hover,
     &:focus,
     &:active {
       border-color: transparent;
+
       svg {
         transform: translateX(3px);
       }

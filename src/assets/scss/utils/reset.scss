@@ -7,6 +7,7 @@ footer, header, hgroup, menu, nav, section {
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
@@ -42,7 +43,7 @@ img {
   vertical-align: top;
 }
 
-h1,h2,h3,h4,h5 {
+h1, h2, h3, h4, h5 {
   margin: 0 0 12px;
 }
 
@@ -59,44 +60,41 @@ ul, ol {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  &.default-list {
+
+  &.marked {
     li {
+      z-index: 1;
+      position: relative;
+      padding: 0 0 0 20px;
+      margin: 0 0 1px;
+
       &:before {
-        display: none;
+        z-index: -1;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background-color: $orange;
+        border-radius: 50%;
       }
     }
   }
+
   li {
     padding: 0;
     margin: 0;
   }
 }
 
-ul {
-  li {
-    z-index: 1;
-    position: relative;
-    padding: 0 0 0 20px;
-    margin: 0 0 1px;
-    &:before {
-      z-index: -1;
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 10px;
-      width: 8px;
-      height: 8px;
-      background-color: $orange;
-      border-radius: 50%;
-    }
-  }
-}
-
 ol {
   counter-reset: num;
+
   li {
     position: relative;
     padding: 0 0 0 26px;
+
     &:before {
       position: absolute;
       left: 0;

@@ -10,6 +10,7 @@ import '../../components/form/form.scss'
 import '../../components/order/order.scss'
 import '../../components/faq/faq.scss'
 import '../../components/principles/principles.scss'
+import '../../components/modal/modal.scss'
 
 // jquery
 import 'jquery/dist/jquery.min'
@@ -17,6 +18,7 @@ import 'jquery/dist/jquery.min'
 // js
 import '../../components/form/form'
 import '../../components/faq/faq'
+import '../../components/modal/modal'
 
 
 

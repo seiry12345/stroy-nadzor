@@ -2,6 +2,7 @@
   padding: 35px 0 280px;
   background: $orange url("/assets/images/header-bg.jpg") center top no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: #ffffff;
 }
 
@@ -19,6 +20,7 @@
   .wrapper {
     max-width: 1310px;
     display: flex;
+    align-items: flex-start;
   }
 
   .logo {
