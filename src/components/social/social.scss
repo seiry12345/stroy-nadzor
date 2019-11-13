@@ -1,0 +1,36 @@
+.social {
+  display: flex;
+  align-items: center;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__sub {
+    margin-right: 44px;
+  }
+
+  &__item {
+    width: 28px;
+    height: 28px;
+    margin-right: 18px;
+    background: url("/assets/images/instagram.png") no-repeat center;
+    background-size: contain;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-youtube {
+      background-image: url("/assets/images/youtube.png");
+    }
+
+    &-facebook {
+      background-image: url("/assets/images/facebook.png");
+    }
+
+    &-vk {
+      background-image: url("/assets/images/vk.png");
+    }
+  }
+}

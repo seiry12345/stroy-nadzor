@@ -1,5 +1,7 @@
 mixin social(customSelector, items)
-  ul(class=`social-list ${customSelector}`)
-    each item in items
-      li
-        a(href= item.url, class= `social__item ${item.selector}`)
+  div(class=`social ${customSelector}`)
+    p.social__sub Мы в соц. сетях
+    ul(class="social__list")
+      each item in items
+        li
+          a(href= item.url, class= `social__item ${item.selector}`)
