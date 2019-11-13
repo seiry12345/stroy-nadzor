@@ -1,0 +1,183 @@
+@keyframes orderWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes orderHeight {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.order {
+  padding: 75px 0 45px;
+  background-color: #000000;
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+  }
+
+  .section-title {
+    margin-bottom: 70px;
+  }
+
+  &__list {
+    overflow: hidden;
+    position: relative;
+    left: -16px;
+    width: calc(100% + 32px);
+    display: flex;
+    flex-wrap: wrap;
+
+    .order__item {
+      padding: 48px 15px 225px;
+      margin: 0 16px 35px;
+    }
+  }
+
+  &__item {
+    position: relative;
+    width: 20.6%;
+    background: #fff url("/assets/images/email.png") no-repeat center 135px;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &:focus {
+      &:before {
+        animation: orderHeight 0.3s ease both;
+      }
+
+      &:after {
+        animation: orderWidth 0.3s ease both;
+        animation-delay: 0.3s;
+      }
+
+      .order__item-wrap {
+        &:before {
+          animation: orderHeight 0.3s ease both;
+          animation-delay: 0.6s;
+        }
+
+        &:after {
+          animation: orderWidth 0.3s ease both;
+          animation-delay: 0.9s;
+        }
+      }
+
+      .btn {
+        opacity: 1;
+      }
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: $orange;
+    }
+
+    &:before {
+      left: 0;
+      bottom: 0;
+      width: 2px;
+    }
+
+    &:after {
+      left: 0;
+      top: 0;
+      height: 2px;
+    }
+
+    &-wrap {
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        background-color: $orange;
+        transition: all 0.3s ease;
+      }
+
+      &:before {
+        right: 0;
+        top: 0;
+        width: 2px;
+      }
+
+      &:after {
+        right: 0;
+        bottom: 0;
+        height: 2px;
+      }
+    }
+
+    &-consultant {
+      background-image: url("/assets/images/consultant.png");
+    }
+
+    &-map {
+      background-image: url("/assets/images/map.png");
+    }
+
+    &-consultation {
+      background-image: url("/assets/images/consultation.png");
+    }
+
+    &-payment {
+      background-image: url("/assets/images/payment.png");
+    }
+
+    &-foundation {
+      background-image: url("/assets/images/foundation.png");
+    }
+
+    &-team {
+      background-image: url("/assets/images/team.png");
+    }
+  }
+
+  &__title {
+    color: #000000;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .btn {
+    opacity: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+    color: $orange;
+    transform: translateX(-50%);
+    transition: 0.4s;
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: transparent;
+      svg {
+        transform: translateX(3px);
+      }
+    }
+
+    svg {
+      margin-left: 8px;
+
+      path {
+        fill: $orange;
+      }
+    }
+  }
+}
