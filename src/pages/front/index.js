@@ -8,12 +8,14 @@ import '../../components/footer/footer.scss'
 import '../../components/build/build.scss'
 import '../../components/form/form.scss'
 import '../../components/order/order.scss'
+import '../../components/faq/faq.scss'
 
 // jquery
 import 'jquery/dist/jquery.min'
 
 // js
 import '../../components/form/form'
+import '../../components/faq/faq'
 
 
 

@@ -46,6 +46,23 @@ h2,
   font-weight: 700;
 }
 
+section {
+  background-color: #E5E5E5;
+  color: #000000;
+}
+
+.section-padding {
+  padding: 75px 0 45px;
+}
+
+.section--dark {
+  background-color: #000000;
+  color: #ffffff;
+  a {
+    color: #ffffff;
+  }
+}
+
 .section-title {
   font-size: 54px;
   line-height: 64px;
@@ -54,7 +71,7 @@ h2,
 
 h3,
 .h3 {
-  color: #ffffff;
+  color: #000000;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;

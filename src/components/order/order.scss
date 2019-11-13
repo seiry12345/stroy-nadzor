@@ -17,13 +17,7 @@
 }
 
 .order {
-  padding: 75px 0 45px;
-  background-color: #000000;
-  color: #ffffff;
-
-  a {
-    color: #ffffff;
-  }
+  padding-bottom: 45px;
 
   .section-title {
     margin-bottom: 70px;
@@ -47,7 +41,6 @@
     position: relative;
     width: 20.6%;
     background: #fff url("/assets/images/email.png") no-repeat center 135px;
-    cursor: pointer;
 
     &:hover,
     &:active,

@@ -2,6 +2,7 @@ extends ../../layouts/page.pug
 
 include ../../components/header/header.pug
 include ../../components/order/order-item.pug
+include ../../components/faq/Faq-item
 
 block vars
   - const socialItems = [{"url": "#", "selector": "instagram"}, {"url": "#", "selector": "facebook"}, {"url": "#", "selector": "vk"}, {"url": "#", "selector": "youtube"}];
@@ -11,6 +12,7 @@ block header
 block content
   include ../../components/build/build
   include ../../components/order/order
+  include ../../components/faq/faq
 block footer
   include ../../components/footer/footer
 

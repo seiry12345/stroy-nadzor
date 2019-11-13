@@ -1,0 +1,89 @@
+.faq {
+  .section-title {
+    color: #000000;
+    margin-bottom: 22px;
+  }
+
+  .section-subtitle {
+    padding-left: 35px;
+    margin-bottom: 45px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &-list__left,
+  &-list__right {
+    width: 49.4%;
+  }
+
+  &__item {
+    overflow: hidden;
+    margin: 0 0 15px;
+    border: 1px solid #BCBCBC;
+    transition: all 0.8s ease;
+  }
+
+  &__item--active {
+    background-color: #fff;
+    .faq__content {
+      display: block;
+    }
+    .faq__title {
+      padding-top: 30px;
+      margin-bottom: 2px;
+      &:before {
+        transform: rotateX(180deg);
+      }
+      .faq__title-main {
+        display: none;
+      }
+      .faq__title-second {
+        display: block;
+      }
+    }
+  }
+
+  &__title {
+    z-index: 1;
+    position: relative;
+    padding: 18px 55px 15px;
+    margin: 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      right: 35px;
+      top: 23px;
+      width: 15px;
+      height: 9px;
+      background: url("/assets/images/arrow-down.png") no-repeat center;
+      background-size: contain;
+      transition: all 0.3s ease;
+    }
+
+    span {
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__title-second {
+    display: none;
+  }
+
+  &__content {
+    display: none;
+    padding: 0 55px;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    line-height: 24px;
+  }
+}

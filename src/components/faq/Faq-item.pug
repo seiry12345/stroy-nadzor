@@ -1,0 +1,9 @@
+mixin faqItem(selector, title, secondTitle, text)
+  .faq__item
+    h3.faq__title
+      | <span class="faq__title-main">#{title}</span>
+      | <span class="faq__title-second">#{secondTitle}</span>
+
+    .faq__content
+      p.faq__text
+        | #{text}
