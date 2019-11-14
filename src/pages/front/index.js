@@ -2,6 +2,7 @@
 import '../../assets/scss/main.scss';
 
 // page scss
+import '../../components/preloader/preloader.scss'
 import '../../components/button/button.scss'
 import '../../components/header/header.scss'
 import '../../components/build/build.scss'
@@ -19,6 +20,7 @@ import '../../components/mobile-nav/mobile-nav.scss'
 import 'jquery/dist/jquery.min'
 
 // js
+import '../../components/preloader/preloader'
 import '../../components/form/form'
 import '../../components/faq/faq'
 import '../../components/modal/modal'

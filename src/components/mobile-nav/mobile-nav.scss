@@ -64,13 +64,13 @@
 
   &__close {
     float: right;
+    width: 30px;
+    height: 30px;
     background-color: transparent;
     padding: 5px;
     margin: 0;
     border: 0;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
     &:hover,
     &:focus,
     &:active {

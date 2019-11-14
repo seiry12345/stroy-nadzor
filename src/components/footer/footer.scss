@@ -33,3 +33,9 @@
     margin-right: 322px;
   }
 }
+
+@media screen and (max-width: $desktopWidth) {
+  .footer__social {
+    margin-right: 0;
+  }
+}

@@ -79,3 +79,19 @@
     font-size: 16px;
   }
 }
+
+@media screen and (max-width: $desktopWidth) {
+  .principles__work-right {
+    width: 64.7%;
+  }
+  .principles p {
+    font-size: 14px;
+  }
+  .principles__review-wrap {
+    padding: 0;
+    justify-content: space-between;
+  }
+  .principles__review-item {
+    flex: 0 1 48%;
+  }
+}

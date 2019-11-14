@@ -25,6 +25,7 @@ form.callform
       .form-item.form-item__company
         label(for="company", class="label") Компания
         input(type="text", id="company", class="form-item--js")
+        span.form-item__optional не обязательно
 
       .form-item.form-item__email
         label(for="email", class="label") Email
@@ -35,6 +36,6 @@ form.callform
         input(type="tel", id="tel", class="form-item--js")
 
   .form-item__wrap
-    +button("callform__btn", "Отправить запрос")
+    button(type="submit", class="btn callform__btn") Отправить запрос
     p.callform__privacy
       | Нажимая на кнопку, вы даете <a href="/privacy">согласие</a> на обработку персональных данных

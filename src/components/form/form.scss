@@ -102,6 +102,15 @@
     }
   }
 
+  &__optional {
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    font-size: 10px;
+    line-height: 12px;
+    color: $gray;
+  }
+
   &__textarea {
     width: 100%;
     margin-bottom: 26px;
