@@ -9,8 +9,10 @@ html(lang="ru")
     title #{title}
     link(rel="stylesheet", href="./assets/fonts/montserrat/montserrat.css")
   body
-    block header
+    include ../components/mobile-nav/mobile-nav
+    .page-content
+      .global-wrapper
+        block header
+        block content
 
-    block content
-
-    block footer
+      block footer

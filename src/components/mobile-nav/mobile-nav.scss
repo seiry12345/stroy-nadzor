@@ -1,0 +1,95 @@
+@keyframes showMobileMenu {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.mobile-nav {
+  display: none;
+  z-index: 11;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  &__wrap {
+    max-width: 360px;
+    height: 100%;
+    padding-top: 15vh;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  &__item {
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    z-index: 1;
+    position: relative;
+    display: block;
+    width: calc(100% - 40px);
+    font-size: 1.25em;
+    color: #000;
+    padding: 0.5em 0.5em 0.5em 25px;
+    &:before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      background-color: $orange;
+      transition: all 0.4s ease;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+  &__close {
+    float: right;
+    background-color: transparent;
+    padding: 5px;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    &:hover,
+    &:focus,
+    &:active {
+      svg path {
+        fill: $orange;
+      }
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      path {
+        fill: #000000;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+
+  &--active {
+    display: block;
+    animation: 0.5s showMobileMenu ease both;
+  }
+}

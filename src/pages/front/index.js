@@ -13,6 +13,7 @@ import '../../components/modal/modal.scss'
 import '../../components/footer/footer.scss'
 import '../../components/social/social.scss'
 import '../../components/hamburger/hamburger.scss'
+import '../../components/mobile-nav/mobile-nav.scss'
 
 // jquery
 import 'jquery/dist/jquery.min'
