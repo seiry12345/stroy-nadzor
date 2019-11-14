@@ -19,3 +19,16 @@
     top: 0;
   }
 }
+
+@media screen and (max-width: 1100px) {
+  .build {
+    display: flex;
+    min-height: auto;
+    max-width: 100%;
+    padding: 0 10px;
+    .callform {
+      position: static;
+      margin-left: 20px;
+    }
+  }
+}

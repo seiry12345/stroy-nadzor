@@ -20,7 +20,7 @@ form.callform
     .form-item__wrap
       .form-item.form-item__name
         label(for="name", class="label") Имя
-        input(type="text", id="name", class="form-item--js")
+        input(type="text", id="name", class="form-item--js", required="")
 
       .form-item.form-item__company
         label(for="company", class="label") Компания
@@ -29,11 +29,11 @@ form.callform
 
       .form-item.form-item__email
         label(for="email", class="label") Email
-        input(type="email", id="email", class="form-item--js")
+        input(type="email", id="email", class="form-item--js", required="")
 
       .form-item.form-item__phone
         label(for="tel", class="label") Телефон
-        input(type="tel", id="tel", class="form-item--js")
+        input(type="tel", id="tel", class="form-item--js", required="")
 
   .form-item__wrap
     button(type="submit", class="btn callform__btn") Отправить запрос

@@ -41,6 +41,7 @@
 
   &__review {
     flex: 1;
+
     img {
       margin-bottom: 25px;
     }
@@ -69,6 +70,7 @@
   &__why {
     max-width: 396px;
     margin-left: 30px;
+
     img {
       margin-bottom: 20px;
     }
@@ -93,5 +95,36 @@
   }
   .principles__review-item {
     flex: 0 1 48%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .principles__work-right {
+    width: 45%;
+  }
+  .principles__review {
+    flex: 0 1 100%;
+    margin-bottom: 30px;
+
+    img {
+      display: block;
+      margin: 0 auto 25px;
+    }
+  }
+  .principles__title {
+    text-align: center;
+  }
+  .principles__why {
+    max-width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      width: 45%;
+      margin-right: 30px;
+    }
+    .principles__why-wrap {
+      flex: 1;
+    }
   }
 }

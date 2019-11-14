@@ -217,3 +217,31 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .order {
+    .section-title {
+      br {
+        display: none;
+      }
+    }
+  }
+  .order__list {
+    left: -1%;
+    width: 102%;
+
+    .order__item {
+      width: 31.3333%;
+      margin: 0 1% 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .order {
+    .section-title {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+}
