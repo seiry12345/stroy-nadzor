@@ -1,3 +1,9 @@
+.header-main {
+  &--fixed {
+    padding-top: 125px;
+  }
+}
+
 .header {
   padding: 35px 0 280px;
   background: $orange url("/assets/images/header-bg.jpg") center top no-repeat;
@@ -8,13 +14,35 @@
 
 .header-top {
   &--fixed {
+    z-index: 5;
     position: fixed;
     left: 0;
-    top: 35px;
+    top: 0;
     width: 100%;
-    background-color: #000;
-    color: #ffffff;
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #000000;
     transition: all 0.3s ease;
+
+    a {
+      color: #000000;
+    }
+
+    .header-top .logo {
+      width: 62px;
+      height: 75px;
+    }
+
+    .header-top__nav .nav__link {
+      color: #000000;
+      &:before {
+        background-color: $orange;
+      }
+    }
+
+    .contacts .contacts__item {
+      color: #000000;
+    }
   }
 
   .wrapper {
@@ -151,6 +179,7 @@
     font-size: 24px;
     line-height: 29px;
     color: #ffffff;
+
     span {
       color: #000000;
     }

@@ -12,6 +12,7 @@ import '../../components/principles/principles.scss'
 import '../../components/modal/modal.scss'
 import '../../components/footer/footer.scss'
 import '../../components/social/social.scss'
+import '../../components/hamburger/hamburger.scss'
 
 // jquery
 import 'jquery/dist/jquery.min'
@@ -20,6 +21,8 @@ import 'jquery/dist/jquery.min'
 import '../../components/form/form'
 import '../../components/faq/faq'
 import '../../components/modal/modal'
+import '../../components/header/header'
+import '../../components/hamburger/hamburger'
 
 
 
