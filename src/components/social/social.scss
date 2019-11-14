@@ -46,3 +46,9 @@
     background-image: url("/assets/images/vk.png");
   }
 }
+
+@media screen and (max-width: 700px) {
+  .social__sub {
+    display: none;
+  }
+}

@@ -32,3 +32,22 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .build {
+    flex-wrap: wrap;
+    .wrapper {
+      width: 100%;
+      text-align: center;
+    }
+    &__title {
+      max-width: 100%;
+      padding-top: 35px;
+      padding-left: 0;
+      margin-bottom: 35px;
+    }
+    .callform {
+      margin: 0 auto;
+    }
+  }
+}

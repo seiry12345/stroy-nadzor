@@ -39,3 +39,15 @@
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: $smDesktopWidth) {
+  .footer {
+    .wrapper {
+      align-items: center;
+    }
+    .copyrights,
+    .footer__social {
+      padding: 0;
+    }
+  }
+}

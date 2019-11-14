@@ -29,6 +29,11 @@
     animation: slide-in-bck-bottom 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
+  &__wrapper {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
   &__btn-close {
     position: absolute;
     right: 15px;
