@@ -192,9 +192,27 @@ footer {
   }
 }
 
-@media screen and (max-width: $smDesktopWidth) {
+@media screen and (max-width: $tableWidth) {
   h2, .h2,
   .section-title {
     font-size: 32px;
+  }
+  h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  html {
+    font-size: 14px;
+  }
+  h2, .h2,
+  .section-title {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  h3, .h3 {
+    font-size: 16px;
   }
 }

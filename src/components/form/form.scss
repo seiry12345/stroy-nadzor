@@ -114,8 +114,10 @@
   &__textarea {
     width: 100%;
     margin-bottom: 26px;
+
     .label {
       bottom: 17px;
+
       &--active {
         bottom: 42px;
       }
@@ -157,12 +159,45 @@
       font-size: 32px;
       text-align: center;
     }
+
     &__subtitle {
       text-align: center;
+
       br {
         display: none;
       }
     }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .form-item__wrap {
+    flex-wrap: wrap;
+  }
+  .callform__btn {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .callform__privacy {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .callform {
+    .form-item {
+      width: 100%;
+    }
+  }
+  .callform__item-contacts {
+    margin-bottom: 20px;
+  }
+  .form-item__file {
+    margin: 0 auto 26px;
+  }
+  .callform__title {
+    font-size: 24px;
   }
 }
 

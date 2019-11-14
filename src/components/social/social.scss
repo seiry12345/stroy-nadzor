@@ -1,6 +1,7 @@
 .social {
   display: flex;
   align-items: center;
+
   &__list {
     display: flex;
     align-items: center;
@@ -16,11 +17,13 @@
     margin-right: 18px;
     border-radius: 50%;
     border: 1px solid transparent;
+
     &:hover,
     &:active,
     &:focus {
       border-color: $orange;
     }
+
     &:last-child {
       margin-right: 0;
     }
@@ -50,5 +53,14 @@
 @media screen and (max-width: 700px) {
   .social__sub {
     display: none;
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .social__item {
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

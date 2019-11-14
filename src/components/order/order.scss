@@ -246,7 +246,27 @@
   }
 }
 
+@media screen and (max-width: $smDesktopWidth) {
+  .order__item {
+    &:hover,
+    &:active,
+    &:focus {
+      .btn {
+        animation: none;
+      }
+    }
+    .btn {
+      display: block;
+    }
+  }
+}
+
 @media screen and (max-width: 900px) {
+  .order {
+    .section-title {
+      margin-bottom: 35px;
+    }
+  }
   .order__list {
     left: -1%;
     width: 102%;
@@ -267,6 +287,14 @@
     .order__item {
       width: 85%;
       margin: 0 auto 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .order__list {
+    .order__item {
+      width: 100%;
     }
   }
 }

@@ -1,25 +1,24 @@
 include ../button/button
 form.modal
-  .modal__wrapper
-    button(type="button", class="modal__btn-close")
-      | <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-      | <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7279 14.1421L14.1421 12.7279L8.4853 7.07108L14.1422 1.41421L12.728 0L7.07108 5.65687L1.41421 0L0 1.41421L5.65687 7.07108L2.89679e-05 12.7279L1.41424 14.1421L7.07108 8.4853L12.7279 14.1421Z" fill="black"/>
-      | </svg>
-    h3.modal__title Есть вопросы?
+  button(type="button", class="modal__btn-close")
+    | <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+    | <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7279 14.1421L14.1421 12.7279L8.4853 7.07108L14.1422 1.41421L12.728 0L7.07108 5.65687L1.41421 0L0 1.41421L5.65687 7.07108L2.89679e-05 12.7279L1.41424 14.1421L7.07108 8.4853L12.7279 14.1421Z" fill="black"/>
+    | </svg>
+  h3.modal__title Есть вопросы?
 
-    p.modal__subtitle
-      | Оставьте свои контакты и наш менеджер Вам перезвонит!
+  p.modal__subtitle
+    | Оставьте свои контакты и наш менеджер Вам перезвонит!
 
-    .form-item.form-item__name
-      label(for="modal-name", class="label") Имя
-      input(type="text", id="modal-name", class="form-item--js", required="")
+  .form-item.form-item__name
+    label(for="modal-name", class="label") Имя
+    input(type="text", id="modal-name", class="form-item--js", required="")
 
-    .form-item.form-item__phone
-      label(for="modal-tel", class="label") Телефон
-      input(type="tel", id="modal-tel", class="form-item--js", required="")
+  .form-item.form-item__phone
+    label(for="modal-tel", class="label") Телефон
+    input(type="tel", id="modal-tel", class="form-item--js", required="")
 
-    button(type="submit", class="btn modal__btn") Отправить запрос
+  button(type="submit", class="btn modal__btn") Отправить запрос
 
-    p.modal__privacy
-      | Я даю согласие на обработку моих персональных данных<br />
-      | в порядке и на условиях, указанных в <a href="/policy">согласии</a>
+  p.modal__privacy
+    | Я даю согласие на обработку моих персональных данных<br />
+    | в порядке и на условиях, указанных в <a href="/policy">согласии</a>

@@ -179,3 +179,10 @@
     }
   }
 }
+
+@media screen and (max-width: $phoneWidth) {
+  .principles__title {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}

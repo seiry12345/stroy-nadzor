@@ -17,6 +17,7 @@
   .logo {
     width: 45px;
     margin-right: 32px;
+
     svg {
       width: 100%;
       height: 100%;
@@ -45,9 +46,36 @@
     .wrapper {
       align-items: center;
     }
+
     .copyrights,
     .footer__social {
       padding: 0;
+    }
+  }
+}
+
+@media screen and (max-width: $phoneWidth) {
+  .footer {
+    .logo {
+      margin-right: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      & > div {
+        margin: 0 auto 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
