@@ -98,7 +98,7 @@ ol {
     &:before {
       position: absolute;
       left: 0;
-      top: 2px;
+      top: 1px;
       content: counter(num) ') ';
       counter-increment: num;
       font-weight: 700;
