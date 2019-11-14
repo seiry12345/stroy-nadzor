@@ -81,7 +81,7 @@
   &__item {
     position: relative;
     width: 20.6%;
-    background: #fff url("/assets/images/email.png") no-repeat center 135px;
+    background: #fff url("../../images/email.png") no-repeat center 135px;
 
     &:hover,
     &:active,
@@ -155,27 +155,27 @@
     }
 
     &-consultant {
-      background-image: url("/assets/images/consultant.png");
+      background-image: url("../../images/consultant.png");
     }
 
     &-map {
-      background-image: url("/assets/images/map.png");
+      background-image: url("../../images/map.png");
     }
 
     &-consultation {
-      background-image: url("/assets/images/consultation.png");
+      background-image: url("../../images/consultation.png");
     }
 
     &-payment {
-      background-image: url("/assets/images/payment.png");
+      background-image: url("../../images/payment.png");
     }
 
     &-foundation {
-      background-image: url("/assets/images/foundation.png");
+      background-image: url("../../images/foundation.png");
     }
 
     &-team {
-      background-image: url("/assets/images/team.png");
+      background-image: url("../../images/team.png");
     }
   }
 
